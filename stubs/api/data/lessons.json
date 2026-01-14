@@ -1,0 +1,172 @@
+[
+  {
+    "id": "lesson-gigachat-intro",
+    "moduleId": "prompting-basics",
+    "title": "Знакомство с GigaChat",
+    "order": 1,
+    "estimatedMinutes": 15,
+    "xpReward": 100,
+    "content": {
+      "type": "code-tutorial",
+      "sections": [
+        {
+          "heading": "Что такое GigaChat",
+          "body": "GigaChat — российская языковая модель от Сбера, оптимизированная для работы с русским языком. Она обеспечивает высокое качество понимания и генерации текста на русском, учитывая культурный и языковой контекст.",
+          "callouts": [
+            {
+              "type": "tip",
+              "content": "GigaChat поддерживает русский язык лучше западных моделей благодаря обучению на русскоязычных данных"
+            }
+          ]
+        },
+        {
+          "heading": "Основные возможности",
+          "body": "GigaChat умеет: отвечать на вопросы, генерировать тексты, переводить, анализировать код, помогать в написании документов и многое другое.",
+          "codeExamples": [
+            {
+              "language": "python",
+              "code": "from gigachat import GigaChat\n\nclient = GigaChat(credentials='YOUR_API_KEY')\nresponse = client.chat('Привет, расскажи о себе')\nprint(response)",
+              "description": "Пример использования GigaChat API",
+              "filename": "gigachat_example.py"
+            }
+          ]
+        },
+        {
+          "heading": "Когда использовать GigaChat",
+          "body": "GigaChat идеально подходит для задач, связанных с русским языком: создание маркетинговых текстов, анализ документов, работа с российским законодательством, генерация контента для русскоязычной аудитории."
+        }
+      ]
+    },
+    "exercises": ["ex-gigachat-1", "ex-gigachat-2", "ex-gigachat-3"]
+  },
+  {
+    "id": "lesson-deepseek-intro",
+    "moduleId": "prompting-basics",
+    "title": "Работа с DeepSeek",
+    "order": 2,
+    "estimatedMinutes": 15,
+    "xpReward": 100,
+    "content": {
+      "type": "code-tutorial",
+      "sections": [
+        {
+          "heading": "Что такое DeepSeek",
+          "body": "DeepSeek — открытая языковая модель с акцентом на работу с кодом и техническими задачами. Она показывает отличные результаты в программировании, анализе алгоритмов и технической документации."
+        },
+        {
+          "heading": "Преимущества DeepSeek",
+          "body": "DeepSeek особенно хорош для: разработки кода, рефакторинга, поиска багов, объяснения сложных алгоритмов, создания технической документации.",
+          "codeExamples": [
+            {
+              "language": "javascript",
+              "code": "// Пример промпта для DeepSeek\nconst prompt = `\nНапиши функцию на TypeScript для валидации email адреса.\nИспользуй регулярные выражения и добавь обработку ошибок.\n`;\n\n// DeepSeek вернет качественный код с комментариями",
+              "description": "Эффективный промпт для DeepSeek"
+            }
+          ]
+        }
+      ]
+    },
+    "exercises": ["ex-deepseek-1", "ex-deepseek-2"]
+  },
+  {
+    "id": "lesson-perplexity-intro",
+    "moduleId": "prompting-basics",
+    "title": "Perplexity для поиска",
+    "order": 3,
+    "estimatedMinutes": 15,
+    "xpReward": 100,
+    "content": {
+      "type": "interactive",
+      "sections": [
+        {
+          "heading": "Perplexity как поисковая система",
+          "body": "Perplexity — AI-powered поисковая система, которая не просто находит ссылки, а дает конкретные ответы с указанием источников. Это революционный подход к поиску информации."
+        },
+        {
+          "heading": "Как использовать Perplexity эффективно",
+          "body": "Формулируйте конкретные вопросы, уточняйте контекст, используйте follow-up вопросы для углубления в тему. Perplexity автоматически цитирует источники, что важно для проверки информации."
+        }
+      ]
+    },
+    "exercises": ["ex-perplexity-1", "ex-perplexity-2"]
+  },
+  {
+    "id": "lesson-prompt-structure",
+    "moduleId": "prompting-basics",
+    "title": "Структура эффективных промптов",
+    "order": 4,
+    "estimatedMinutes": 20,
+    "xpReward": 120,
+    "content": {
+      "type": "interactive",
+      "sections": [
+        {
+          "heading": "Компоненты хорошего промпта",
+          "body": "Эффективный промпт состоит из: контекста (кто вы и какая задача), инструкции (что нужно сделать), примеров (при необходимости), ограничений (формат, длина, стиль).",
+          "callouts": [
+            {
+              "type": "best-practice",
+              "content": "Чем конкретнее промпт, тем лучше результат. Не бойтесь писать длинные детальные инструкции."
+            }
+          ]
+        },
+        {
+          "heading": "Шаблон промпта",
+          "body": "Роль → Контекст → Задача → Ограничения → Формат вывода",
+          "codeExamples": [
+            {
+              "language": "text",
+              "code": "Ты — опытный маркетолог.\nКомпания: IT-стартап, продукт — платформа для обучения AI.\nСоздай описание продукта для главной страницы сайта.\nОграничения: до 150 слов, дружелюбный тон, без технического жаргона.\nФормат: один абзац текста.",
+              "description": "Пример структурированного промпта"
+            }
+          ]
+        }
+      ]
+    },
+    "exercises": ["ex-prompt-structure-1", "ex-prompt-structure-2", "ex-prompt-structure-3"]
+  },
+  {
+    "id": "lesson-model-comparison",
+    "moduleId": "prompting-basics",
+    "title": "Сравнение моделей",
+    "order": 5,
+    "estimatedMinutes": 20,
+    "xpReward": 120,
+    "content": {
+      "type": "interactive",
+      "sections": [
+        {
+          "heading": "Когда использовать каждую модель",
+          "body": "GigaChat — для русского языка и локального контекста. DeepSeek — для кода и технических задач. Perplexity — для поиска актуальной информации с источниками."
+        },
+        {
+          "heading": "Практические кейсы",
+          "body": "Маркетинговый текст → GigaChat. Рефакторинг кода → DeepSeek. Исследование рынка → Perplexity. Техническая документация → DeepSeek. Юридический анализ → GigaChat."
+        }
+      ]
+    },
+    "exercises": ["ex-comparison-1", "ex-comparison-2"]
+  },
+  {
+    "id": "lesson-practical-cases",
+    "moduleId": "prompting-basics",
+    "title": "Практические кейсы",
+    "order": 6,
+    "estimatedMinutes": 25,
+    "xpReward": 150,
+    "content": {
+      "type": "interactive",
+      "sections": [
+        {
+          "heading": "Реальные задачи разработчика",
+          "body": "Рассмотрим типичные задачи и как AI-инструменты помогают их решать: отладка кода, написание документации, генерация тестов, код-ревью."
+        },
+        {
+          "heading": "Best Practices",
+          "body": "Всегда проверяйте сгенерированный код. Используйте AI как помощника, а не замену мышлению. Итеративно улучшайте промпты на основе результатов."
+        }
+      ]
+    },
+    "exercises": ["ex-practical-1", "ex-practical-2", "ex-practical-3"]
+  }
+]

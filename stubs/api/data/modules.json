@@ -1,0 +1,62 @@
+[
+  {
+    "id": "prompting-basics",
+    "title": "Основы промптинга",
+    "description": "Работа с GigaChat, DeepSeek, Perplexity",
+    "icon": "message-square",
+    "order": 1,
+    "difficulty": "beginner",
+    "estimatedHours": 3,
+    "tools": ["gigachat", "deepseek", "perplexity"],
+    "prerequisites": [],
+    "xpReward": 500
+  },
+  {
+    "id": "comet-browser",
+    "title": "AI-браузер Comet",
+    "description": "Эффективный поиск и работа с информацией",
+    "icon": "globe",
+    "order": 2,
+    "difficulty": "beginner",
+    "estimatedHours": 2,
+    "tools": ["comet"],
+    "prerequisites": ["prompting-basics"],
+    "xpReward": 400
+  },
+  {
+    "id": "cursor-setup",
+    "title": "Cursor.ai для разработки",
+    "description": "Настройка и использование AI в разработке",
+    "icon": "code",
+    "order": 3,
+    "difficulty": "intermediate",
+    "estimatedHours": 4,
+    "tools": ["cursor"],
+    "prerequisites": ["prompting-basics"],
+    "xpReward": 600
+  },
+  {
+    "id": "ai-agents-basics",
+    "title": "Создание AI-агентов",
+    "description": "Разработка простых AI-агентов",
+    "icon": "bot",
+    "order": 4,
+    "difficulty": "intermediate",
+    "estimatedHours": 5,
+    "tools": ["langchain", "agents"],
+    "prerequisites": ["cursor-setup"],
+    "xpReward": 700
+  },
+  {
+    "id": "mcp-intro",
+    "title": "MCP Introduction",
+    "description": "Создание MCP серверов для расширения возможностей LLM",
+    "icon": "server",
+    "order": 5,
+    "difficulty": "advanced",
+    "estimatedHours": 6,
+    "tools": ["mcp"],
+    "prerequisites": ["ai-agents-basics"],
+    "xpReward": 800
+  }
+]
